@@ -1,0 +1,457 @@
+/*baseline styles*/
+
+html body{ 
+    font-family: "ubuntu", sans-serif; 
+    font-size: 17px; 
+    line-height: 1.5em;
+}
+
+h1{
+    font-size: 68px;
+}
+
+h2{
+    font-size: 34px;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 24px; 
+    font-weight: 600; 
+}
+
+a{  
+    color: #1c97ea;
+    line-height: 2em;
+    text-decoration: none; 
+}
+a:hover {
+    color: #8e54a2;
+}
+
+.grey{
+    background-color: whitesmoke;
+}
+
+.bold{
+    font-weight: 700;
+}
+.white{ 
+    color: white; 
+}
+
+/* ----------------------------------------------------------Navigation style*/
+header{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:10px; 
+}
+.center-text{
+    width: 950px;
+    margin: 0 auto; 
+    line-height: 1.25;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo{
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.navigation{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+
+.navigation ul li{
+    margin-left: 25px;
+    display: inline;
+}
+
+.navigation ul li a{
+    margin-left: 25px;
+    border-bottom: solid 5px transparent;
+}
+
+.navigation a:hover{
+    color: #8e54a2;
+    padding-bottom: 6px;
+    border-bottom: solid 5px #8e54a2;
+}
+
+.navigation a:active{
+  color: #1c97ea;;
+}
+
+.Headerbg{
+    background-image: url('../images/store.jpg');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+
+}
+
+/* container style*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------Menu style*/
+.menu{
+    width: 950px;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Services{
+    width: 950px;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box{
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top; 
+}
+.box-half{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top; 
+   	padding-top: 50px;
+}
+
+.Services :first-child{
+    margin-right: 80px; 
+} 
+
+.item{
+    text-align: center;
+    width: 15%;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-bottom: 5px solid transparent;
+}
+.item-menu{
+    text-align:center; 
+}
+.item:hover{
+   border-bottom: 5px solid rgb(142,84,162);
+}
+.item img{
+    width: 55%;
+}
+.item a{
+    color: #1c97ea;
+    line-height: 2em;
+}
+.item a:hover{
+    color: #8e54a2;
+}
+.icon-froyo:before{
+    font-size: 150px;
+}
+.icon-crepe:before{
+    font-size: 150px;
+}
+.icon-smoothie:before{
+    font-size: 150px;
+}
+.icon-toppings:before{
+    font-size: 150px;
+}
+
+.icon-candy:before{
+        font-size: 50px;
+}
+.icon-syrup:before{
+        font-size: 50px;
+}
+.icon-nuts:before{
+        font-size: 50px;
+}
+.icon-fruit:before{  
+      font-size: 50px;
+}
+.toppingsPic{
+    background-image: url('../images/toppings.png');
+    background-size: cover;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.toppingsPic div{
+    width: 60%;
+    margin: 0 auto;
+}
+.ToppingsList{
+    width: 950px;
+    padding-top: 50px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ToppingsList div{
+    width: 45%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 25px; 
+}
+
+.ToppingsBar div{
+    text-align: left;
+}
+
+.ToppingsBar .icon-candy{
+    width: 60px;
+}
+
+.ToppingsBar .icon-nuts{
+    width: 60px;
+}
+
+.ToppingsBar .icon-syrup{
+    width: 60px;
+}
+
+.ToppingsBar .icon-fruit{
+    width: 60px;
+}
+
+.machines{
+    background-image: url('../images/machines.jpg');
+    background-size: cover;
+    background-position: top left;
+    height: 400px;
+    width: 50%;
+    display: inline-block;
+}
+
+.smoothie{
+    background-image: url('../images/smoothie.jpg');
+    background-size: cover;
+    background-position: top right;
+    height: 400px;
+    width: 50%;
+    display: inline-block;
+}
+.crepes{
+    background-image: url('../images/crepe.png');
+    background-size: cover;
+    background-position: top right;
+    height: 400px;
+    width: 50%;
+    display: inline-block;
+}
+
+
+/* ----------------------------------------------------------About style*/
+.shopImage{
+    background-image: url('../images/shop.jpg');
+    background-size: cover;
+    background-position: top right;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+}
+
+.shopImage2{
+    background-image: url('../images/shop1.jpg');
+    background-size: cover;
+    background-position: top right;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+}
+
+/* ----------------------------------------------------------services style*/
+
+.services h3{
+    border-bottom: 5px solid transparent;
+}
+.services a:hover{
+   border-bottom: 5px solid white;
+}
+.ServicesPic{
+    background-image: url('../images/services.jpg');
+    background-size: cover;
+    background-position: bottom right;
+    height: 300px;
+    width: 100%;
+    }
+
+.services-pic{
+    background-size: cover;
+    background-position: bottom right;
+    height: 300px;
+    width: 50%;
+    display: inline-block; 
+}
+.flyers{
+     background-image: url('../images/services.jpg');
+}
+.profit-share-pic{
+    background-image: url('../images/profit1.jpg');
+    background-size: contain;
+    height: 300px;
+    width: 50%;
+    display: inline-block;
+}
+
+.services-box{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.services-box ul{
+    list-style: inherit;
+    padding-left: 20px;
+    line-height: 2em;
+}
+
+
+.offering{
+    text-align: center;
+    vertical-align: top;
+}
+.offering p{
+    display: inline-block;
+    vertical-align: top;
+}
+.offeringText{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 50px;
+    width: 50%;
+}
+
+
+/* ----------------------------------------------------------contact style*/
+.contact{ 
+    width: 950px; 
+    margin: 0 auto; 
+    padding-top: 50px;
+
+}
+.contact.container{
+  padding-left: 25px;
+  line-height: 0px;
+}
+.contact-info{
+    line-height: 2em;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 50px;
+}
+
+.contact-info ul{ 
+    display: inline-block; 
+    width: 300px; 
+    vertical-align:top;
+}
+
+
+.map{
+    line-height: 0px;
+    position: relative;
+    padding-bottom: 35%;
+    padding-top: 50px;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto; 
+    width: 950px; 
+}
+
+.map iframe {
+    margin: 0 auto;
+    line-height: 0px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 325px;;
+}
+
+/* ----------------------------------------------------------footer*/
+footer{
+    height: 50px;
+    background-color: #8e54a2;
+}
+
+
+/* ----------------------------------------------------------Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@media screen and (max-width: 950px){
+
+@media screen and (max-width: 550px){
+   
+}
+}
