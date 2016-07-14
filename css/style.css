@@ -5,41 +5,73 @@ html body{
     font-size: 17px; 
     line-height: 1.5em;
 }
-
+.grey{
+    background-color: whitesmoke;
+}
+/* ----------------------------------------------------Typography*/
 h1{
     font-size: 68px;
 }
-
 h2{
     font-size: 34px;
     font-weight: 300;
 }
-
 h3{
     font-size: 24px; 
     font-weight: 600; 
 }
+.white{ 
+    color: white; 
+}
+.bold{
+    font-weight: 700;
+}
+@media screen and (max-width: 950px){
+    h1{
+        font-size: 50px;
+        line-height: 1em;
+}
+    h2{
+        font-size: 25px;
+}
+    h3{
+        font-size: 20px;
+    }
+    p, html body{
+        font-size: 15px;
+    }
+}
 
+/* ----------------------------------------------------------Link Styling*/
 a{  
     color: #1c97ea;
     line-height: 2em;
     text-decoration: none; 
 }
+.navigation ul li a{
+    margin-left: 25px;
+}
+.navigation a:hover{
+    color: #8e54a2;
+    padding-bottom: 6px;
+    border-bottom: solid 5px #8e54a2;
+}
+.navigation a:active{
+  color: #1c97ea;;
+}
 a:hover {
     color: #8e54a2;
 }
-
-.grey{
-    background-color: whitesmoke;
+.item a{
+    color: #1c97ea;
+    line-height: 2em;
 }
-
-.bold{
-    font-weight: 700;
+.item a:hover{
+    color: #8e54a2;
 }
-.white{ 
-    color: white; 
+.item:hover{
+   border-bottom: 5px solid rgb(142,84,162);
 }
-
 /* ----------------------------------------------------------Navigation style*/
 header{
     text-align: center;
@@ -53,13 +85,17 @@ header{
     text-align: center;
     padding-bottom: 20px;
 }
+@media screen and (max-width: 950px){
+    .center-text{
+        width: 80%;
+    }
+} 
 
 .logo{
     width: 200px;
     display: inline-block;
     vertical-align: middle;
 }
-
 .logo img{
     width: 200px;
 }
@@ -69,37 +105,22 @@ header{
     text-align: right;
     width: 50%;
 }
+@media screen and (max-width: 950px){
+    .navigation{
+        width: 100%;
+        text-align: center;
+    }
+}
 
 .navigation ul li{
     margin-left: 25px;
     display: inline;
 }
-
-.navigation ul li a{
-    margin-left: 25px;
-    border-bottom: solid 5px transparent;
+@media screen and (max-width: 950px){   
+    .navigation ul li{
+        margin-left: 5px;
+    }
 }
-
-.navigation a:hover{
-    color: #8e54a2;
-    padding-bottom: 6px;
-    border-bottom: solid 5px #8e54a2;
-}
-
-.navigation a:active{
-  color: #1c97ea;;
-}
-
-.Headerbg{
-    background-image: url('../images/store.jpg');
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    color: white;
-
-}
-
 /* container style*/
 .container{
     width: 100%;
@@ -114,7 +135,11 @@ header{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
+@media screen and (max-width: 950px){
+    .menu{
+        width: 80%;
+    }
+}
 .Services{
     width: 950px;
     text-align: center; 
@@ -122,12 +147,26 @@ header{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
+@media screen and (max-width: 950px){
+    .Services{
+        width: 80%;
+        padding-top: 0px; 
+    }
+}
 .box{
     width: 45%;
     display: inline-block;
     text-align: left;
     vertical-align: top; 
+}
+@media screen and (max-width: 950px){
+    .box{
+        width: 100%;
+         margin-top: 50px;
+    }
+    .Services:nth-of-type(2){
+        margin-top: 50px; 
+    }
 }
 .box-half{
     width: 100%;
@@ -136,11 +175,16 @@ header{
     vertical-align: top; 
    	padding-top: 50px;
 }
-
 .Services :first-child{
     margin-right: 80px; 
 } 
-
+@media screen and (max-width: 950px){
+    .Services :first-child{
+        margin: 0 auto; 
+        width: 100%;
+    } 
+}
+/* ---------------------------------------------------------Menu Items*/
 .item{
     text-align: center;
     width: 15%;
@@ -151,185 +195,82 @@ header{
     margin-right: 45px;
     border-bottom: 5px solid transparent;
 }
-.item-menu{
-    text-align:center; 
+@media screen and (max-width: 950px){
+    .item {
+        text-align: center;
+        width: 35%;
+        display: inline-block;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
-.item:hover{
-   border-bottom: 5px solid rgb(142,84,162);
-}
+
 .item img{
     width: 55%;
 }
-.item a{
-    color: #1c97ea;
-    line-height: 2em;
+.item-menu{
+    text-align:center; 
 }
-.item a:hover{
-    color: #8e54a2;
-}
-.icon-froyo:before{
+.icon-froyo:before, .icon-crepe:before, .icon-smoothie:before, .icon-toppings:before{
     font-size: 150px;
 }
-.icon-crepe:before{
-    font-size: 150px;
-}
-.icon-smoothie:before{
-    font-size: 150px;
-}
-.icon-toppings:before{
-    font-size: 150px;
+@media screen and (max-width: 950px){
+    .icon-froyo:before, .icon-crepe:before, .icon-smoothie:before, .icon-toppings:before {
+        font-size: 100px;
+    }
 }
 
-.icon-candy:before{
-        font-size: 50px;
-}
-.icon-syrup:before{
-        font-size: 50px;
-}
-.icon-nuts:before{
-        font-size: 50px;
-}
-.icon-fruit:before{  
+.icon-candy:before, .icon-nuts:before, .icon-syrup:before, .icon-fruit:before{
       font-size: 50px;
-}
-.toppingsPic{
-    background-image: url('../images/toppings.png');
-    background-size: cover;
-    text-align: center;
-    padding-top: 75px;
-    padding-bottom: 75px;
 }
 .toppingsPic div{
     width: 60%;
     margin: 0 auto;
 }
 .ToppingsList{
-    width: 950px;
     padding-top: 50px; 
     margin: 0 auto;
     text-align: center;
 }
-
 .ToppingsList div{
-    width: 45%;
+    width: 205px;
     margin: 0 auto;
     display: inline-block;
     vertical-align: top;
     padding-bottom: 25px; 
 }
-
 .ToppingsBar div{
     text-align: left;
 }
-
-.ToppingsBar .icon-candy{
+.ToppingsBar .icon-candy, icon-nuts, icon-syrup, .icon-fruit{
     width: 60px;
 }
-
-.ToppingsBar .icon-nuts{
-    width: 60px;
-}
-
-.ToppingsBar .icon-syrup{
-    width: 60px;
-}
-
-.ToppingsBar .icon-fruit{
-    width: 60px;
-}
-
-.machines{
-    background-image: url('../images/machines.jpg');
+/* ----------------------------------------------------------services Image style*/
+.service-page-photos{
     background-size: cover;
-    background-position: top left;
-    height: 400px;
-    width: 50%;
-    display: inline-block;
-}
-
-.smoothie{
-    background-image: url('../images/smoothie.jpg');
-    background-size: cover;
-    background-position: top right;
-    height: 400px;
-    width: 50%;
-    display: inline-block;
-}
-.crepes{
-    background-image: url('../images/crepe.png');
-    background-size: cover;
-    background-position: top right;
-    height: 400px;
-    width: 50%;
-    display: inline-block;
-}
-
-
-/* ----------------------------------------------------------About style*/
-.shopImage{
-    background-image: url('../images/shop.jpg');
-    background-size: cover;
-    background-position: top right;
-    width: 300px;
-    height: 400px;
-    display: inline-block;
-}
-
-.shopImage2{
-    background-image: url('../images/shop1.jpg');
-    background-size: cover;
-    background-position: top right;
-    width: 300px;
-    height: 400px;
-    display: inline-block;
-}
-
-/* ----------------------------------------------------------services style*/
-
-.services h3{
-    border-bottom: 5px solid transparent;
-}
-.services a:hover{
-   border-bottom: 5px solid white;
-}
-.ServicesPic{
-    background-image: url('../images/services.jpg');
-    background-size: cover;
-    background-position: bottom right;
-    height: 300px;
-    width: 100%;
-    }
-
-.services-pic{
-    background-size: cover;
-    background-position: bottom right;
-    height: 300px;
-    width: 50%;
-    display: inline-block; 
-}
-.flyers{
-     background-image: url('../images/services.jpg');
-}
-.profit-share-pic{
-    background-image: url('../images/profit1.jpg');
-    background-size: contain;
     height: 300px;
     width: 50%;
     display: inline-block;
+    background-position: center center;
 }
-
 .services-box{
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    text-align: left; 
+}
+@media screen and (max-width: 950px){
+    .services-box{
+        width: 100%;
+    }
 }
 .services-box ul{
     list-style: inherit;
     padding-left: 20px;
     line-height: 2em;
 }
-
-
 .offering{
     text-align: center;
     vertical-align: top;
@@ -345,14 +286,17 @@ header{
     margin-left: 50px;
     width: 50%;
 }
-
-
 /* ----------------------------------------------------------contact style*/
 .contact{ 
     width: 950px; 
     margin: 0 auto; 
     padding-top: 50px;
-
+}
+@media screen and (max-width: 950px){
+    .contact{
+        width: 80%;
+        padding-top: 25px
+    }
 }
 .contact.container{
   padding-left: 25px;
@@ -360,18 +304,15 @@ header{
 }
 .contact-info{
     line-height: 2em;
-    text-align: left;
+    text-align: center;
     vertical-align: top;
     padding-bottom: 50px;
 }
-
 .contact-info ul{ 
     display: inline-block; 
     width: 300px; 
     vertical-align:top;
 }
-
-
 .map{
     line-height: 0px;
     position: relative;
@@ -382,7 +323,18 @@ header{
     margin: 0 auto; 
     width: 950px; 
 }
-
+@media screen and (max-width: 950px){
+    .map{
+        width: 100%;
+        padding-bottom: 300px;        
+    }
+}
+@media screen and (max-width: 400px){
+    .map{
+     padding-top: 350px;
+     padding-bottom: 0px; 
+    }
+}
 .map iframe {
     margin: 0 auto;
     line-height: 0px;
@@ -398,9 +350,108 @@ footer{
     height: 50px;
     background-color: #8e54a2;
 }
+/* ----------------------------------------------------------Images*/
+.interior1{
+    background-image: url('../images/interior/interior1.jpg');
+}
+.interior2{
+    background-image: url('../images/interior/interior2.jpg');
+}
+.interior3{
+    background-image: url('../images/interior/interior3.jpg');
+}
+.interior4{
+       background-image: url('../images/store.jpg'); 
+}
+.machines{
+    background-image: url('../images/machines.jpg');
+}
+.flyers{
+     background-image: url('../images/services.jpg');
+}
+.profit-share{
+    background-image: url('../images/services/profitshare.png');
+}
+.catering{
+    background-image: url('../images/services/catering.png');
+}
+.birthday{
+    background-image: url('../images/services/birthday.png');
+}
+.toppings1{
+    background-image: url('../images/toppings.png');
+}
+/* ------------------------------------------------------Image Styling*/
+/* All Image Styles can be found here. 
+*/
+.menu-images{
+    background-size: cover;
+    background-position: top left;
+    height: 400px;
+    width: 50%;
+    display: inline-block;
+}
+.ServicesPic2{
+    background-size: cover;
+    background-position: bottom right;
+    height: 300px;
+    width: 100%;
+}
+.interior-images{
+    background-size: cover;
+    height: 300px;
+    width: 50%;
+    display: inline-block;
+}
+.toppings-pic{
+    background-size: cover;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.Headerbg{
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 950px){
+    .Headerbg{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .menu-images{
+        height: 200px; 
+    }
+}
+@media screen and (max-width: 400px){
+    .Headerbg{
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
+    .menu-images{
+        height: 200px; 
+    }
+    .toppings-pic{
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+}
+.ServicesPic{
+    background-size: cover;
+    background-position: bottom right;
+    height: 300px;
+    width: 100%;
+    }
+.services-pic{
+    background-size: cover;
+    background-position: bottom right;
+    height: 300px;
+    width: 50%;
+    display: inline-block; 
+}
 
-
-/* ----------------------------------------------------------Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -446,12 +497,4 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-
-@media screen and (max-width: 950px){
-
-@media screen and (max-width: 550px){
-   
-}
 }
